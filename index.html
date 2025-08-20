@@ -1,245 +1,1328 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>مهاجرت مطمئن با همراهی کاوه عراقی</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      مهاجرت مطمئن با همراهی کاوه عراقی | Kaveh Araqi Migration Consulting
+    </title>
+    <meta
+      name="description"
+      content="مشاوره تخصصی مهاجرت، تحصیل، سرمایه‌گذاری و بیزینس در آلمان، کانادا، انگلیس و ژاپن با بیش از دو دهه تجربه موفق"
+    />
+    <meta
+      name="keywords"
+      content="مهاجرت, ویزا, اقامت, آلمان, کانادا, انگلیس, ژاپن, کاوه عراقی, مشاوره مهاجرت"
+    />
 
-  <!-- فونت فارسی -->
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- فونت فارسی -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- پرچم‌ها -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@6.6.6/css/flag-icons.min.css"/>
+    <!-- فونت انگلیسی -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <style>
-    :root{
-      --bg:#0f172a;
-      --panel:#111827;
-      --text:#e5e7eb;
-      --muted:#94a3b8;
-      --accent:#38bdf8;
-      --accent-2:#a78bfa;
-      --radius:18px;
-      --shadow:0 10px 30px rgba(0,0,0,.25);
-    }
-
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family:"Vazirmatn",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
-      background:
-        radial-gradient(1000px 600px at 100% -20%, rgba(56,189,248,.12), transparent 60%),
-        radial-gradient(900px 600px at -20% 120%, rgba(167,139,250,.10), transparent 60%),
-        var(--bg);
-      color:var(--text);
-      line-height:1.9;
-    }
-
-    a{color:inherit;text-decoration:none}
-    .container{width:min(1100px,90vw);margin-inline:auto}
-
-    header{
-      position:sticky; top:0; z-index:50;
-      backdrop-filter:saturate(160%) blur(8px);
-      background:linear-gradient(90deg, rgba(17,24,39,.85), rgba(15,23,42,.85));
-      border-bottom:1px solid rgba(148,163,184,.15);
-    }
-    .nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
-    .brand{font-weight:800;letter-spacing:.2px}
-    .brand strong{color:var(--accent)}
-    .menu{display:flex;gap:22px}
-    .menu a{color:var(--muted);font-weight:600}
-    .menu a:hover{color:var(--accent)}
-
-    .hero{padding:72px 0 48px; text-align:center}
-    .hero h1{
-      font-size:clamp(26px,4vw,40px);
-      line-height:1.35;
-      margin:0 0 16px;
-      background:linear-gradient(90deg,var(--accent),var(--accent-2));
-      -webkit-background-clip:text;background-clip:text;color:transparent;
-      font-weight:800;
-    }
-    .hero p{color:var(--muted);max-width:820px;margin:0 auto 28px}
-    .cta{
-      display:inline-block; padding:12px 26px; border-radius:999px;
-      background:linear-gradient(90deg,var(--accent),var(--accent-2));
-      color:#0b1220; font-weight:800; box-shadow:var(--shadow);
-      transition:.25s transform;
-      margin-top:20px; /* فاصله از پرچم‌ها */
-    }
-    .cta:hover{transform:translateY(-3px)}
-
-    /* پرچم‌ها */
-    .flags{margin-top:20px; display:flex; justify-content:center; gap:14px; flex-wrap:wrap}
-    .flags span{font-size:2rem; box-shadow:0 0 10px rgba(0,0,0,.25); border-radius:6px; overflow:hidden}
-
-    section{padding:56px 0}
-    .panel{
-      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
-      border:1px solid rgba(148,163,184,.15);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:28px;
-    }
-    h2{font-size:clamp(20px,3vw,28px);margin:0 0 18px}
-    .muted{color:var(--muted)}
-
-    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:14px}
-    .service-item{
-      padding:16px 18px;border-radius:14px;
-      background:rgba(2,6,23,.6); border:1px solid rgba(148,163,184,.12);
-      transition:transform .2s;
-    }
-    .service-item:hover{transform:translateY(-4px)}
-    .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-left:8px}
-
-    .split{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:center}
-    .badge{display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(56,189,248,.15);color:var(--accent);font-weight:700;margin-bottom:10px}
-
-    .about-header {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 10px;
-    }
-    .profile-img {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 0 10px rgba(0,0,0,.3);
-    }
-
-    .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
-    .contact-card{padding:16px;border:1px solid rgba(148,163,184,.15);border-radius:14px;background:rgba(2,6,23,.6)}
-    .contact-card a{color:var(--accent)}
-
-    footer{padding:28px 0;color:var(--muted);text-align:center}
-
-    @media (max-width: 880px){
-      .menu{display:none}
-      .split{grid-template-columns:1fr}
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <div class="container nav">
-      <div class="brand">کاوه <strong>عراقی</strong></div>
-      <nav class="menu">
-        <a href="#services">خدمات</a>
-        <a href="#about">درباره</a>
-        <a href="#contact">تماس</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero container">
-    <h1>مهاجرت مطمئن با همراهی کاوه عراقی</h1>
-    <p>
-      با بیش از دو دهه تجربه موفق در حوزه مهاجرت، تحصیل، سرمایه‌گذاری و بیزینس در آلمان، کانادا، انگلیس و ژاپن
-    </p>
+    <!-- آیکون‌ها -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
     <!-- پرچم‌ها -->
-    <div class="flags">
-      <span class="fi fi-de"></span>
-      <span class="fi fi-ca"></span>
-      <span class="fi fi-gb"></span>
-      <span class="fi fi-jp"></span>
-      <span class="fi fi-ch"></span>
-      <span class="fi fi-at"></span>
-    </div>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
 
-    <a class="cta" href="#contact">درخواست مشاوره</a>
-  </section>
+    <style>
+      /* CSS Variables for theming */
+      :root {
+        /* Light theme colors */
+        --bg: #ffffff;
+        --panel: #f8fafc;
+        --text: #1e293b;
+        --muted: #64748b;
+        --accent: #2563eb;
+        --accent-2: #7c3aed;
+        --accent-light: #dbeafe;
+        --border: #e2e8f0;
+        --radius: 18px;
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.15);
+        --gradient-primary: linear-gradient(135deg, #2563eb, #7c3aed);
+        --gradient-secondary: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      }
 
-  <!-- Services -->
-  <section id="services" class="container">
-    <div class="panel">
-      <h2>خدمات ما:</h2>
-      <div class="services">
-        <div class="service-item"><span class="dot"></span>ثبت و تاسیس شرکت در آلمان و سوئیس</div>
-        <div class="service-item"><span class="dot"></span>دریافت اقامت کاری، تحصیلی و سرمایه‌گذاری</div>
-        <div class="service-item"><span class="dot"></span>مشاوره جهت اخذ نمایندگی از شرکت‌های اروپایی</div>
-        <div class="service-item"><span class="dot"></span>ثبت علائم تجاری در آلمان و اتحادیه اروپا</div>
-        <div class="service-item"><span class="dot"></span>برگزاری و مشارکت در نمایشگاه‌های بین‌المللی</div>
-        <div class="service-item"><span class="dot"></span>آموزش حرفه‌ای زبان آلمانی</div>
-        <div class="service-item"><span class="dot"></span>دریافت ویزای تحصیلی و کاری (Job Offer)</div>
-        <div class="service-item"><span class="dot"></span>اخذ کارت اقامت دائم (Blue Card)</div>
-        <div class="service-item"><span class="dot"></span>پشتیبانی کامل از ایرانیان مقیم آلمان و اروپا</div>
+      /* Dark theme colors */
+      [data-theme="dark"] {
+        --bg: #0f172a;
+        --panel: #1e293b;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --accent: #38bdf8;
+        --accent-2: #a78bfa;
+        --accent-light: rgba(56, 189, 248, 0.1);
+        --border: #334155;
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.35);
+        --gradient-primary: linear-gradient(135deg, #38bdf8, #a78bfa);
+        --gradient-secondary: linear-gradient(135deg, #0ea5e9, #8b5cf6);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Vazirmatn", "Inter", system-ui, -apple-system,
+          BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        overflow-x: hidden;
+      }
+
+      /* Dark mode background gradients */
+      [data-theme="dark"] body {
+        background: radial-gradient(
+            1000px 600px at 100% -20%,
+            rgba(56, 189, 248, 0.12),
+            transparent 60%
+          ),
+          radial-gradient(
+            900px 600px at -20% 120%,
+            rgba(167, 139, 250, 0.1),
+            transparent 60%
+          ),
+          var(--bg);
+      }
+
+      /* Light mode background gradients */
+      [data-theme="light"] body {
+        background: radial-gradient(
+            1000px 600px at 100% -20%,
+            rgba(37, 99, 235, 0.08),
+            transparent 60%
+          ),
+          radial-gradient(
+            900px 600px at -20% 120%,
+            rgba(124, 58, 237, 0.06),
+            transparent 60%
+          ),
+          var(--bg);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      .container {
+        width: min(1200px, 92vw);
+        margin-inline: auto;
+        padding: 0 1rem;
+      }
+
+      /* Header */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        backdrop-filter: saturate(160%) blur(20px);
+        background: rgba(255, 255, 255, 0.95);
+        border-bottom: 1px solid var(--border);
+        transition: all 0.3s ease;
+      }
+
+      [data-theme="dark"] header {
+        background: rgba(15, 23, 42, 0.95);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+      }
+
+      .brand {
+        font-weight: 800;
+        font-size: 1.5rem;
+        letter-spacing: 0.2px;
+        color: var(--text);
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      [data-theme="dark"] .brand {
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+      }
+
+      .brand strong {
+        background: var(--gradient-primary);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .nav-controls {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      /* Enhanced Theme Toggle Button */
+      .theme-toggle {
+        background: var(--gradient-primary);
+        border: none;
+        padding: 1rem;
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: var(--shadow);
+        position: relative;
+        overflow: hidden;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .theme-toggle::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.5s ease;
+      }
+
+      .theme-toggle:hover::before {
+        left: 100%;
+      }
+
+      .theme-toggle:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .theme-toggle i {
+        font-size: 1.2rem;
+        transition: transform 0.3s ease;
+      }
+
+      .theme-toggle:hover i {
+        transform: rotate(180deg);
+      }
+
+      .menu {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .menu a {
+        color: var(--muted);
+        font-weight: 600;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+      }
+
+      .menu a:hover {
+        color: var(--accent);
+        background: var(--accent-light);
+      }
+
+      .mobile-menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--text);
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0.5rem;
+      }
+
+      /* Hero Section */
+      .hero {
+        padding: 8rem 0 6rem;
+        text-align: center;
+        position: relative;
+      }
+
+      .hero h1 {
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        line-height: 1.2;
+        margin: 0 0 2rem;
+        background: var(--gradient-primary);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: 800;
+        max-width: 900px;
+        margin-inline: auto;
+      }
+
+      .hero p {
+        color: var(--muted);
+        max-width: 800px;
+        margin: 0 auto 3rem;
+        font-size: 1.125rem;
+        line-height: 1.8;
+      }
+
+      .cta {
+        display: inline-block;
+        padding: 1.5rem 3rem;
+        border-radius: 50px;
+        background: var(--gradient-primary);
+        color: white;
+        font-weight: 700;
+        box-shadow: var(--shadow);
+        transition: all 0.3s ease;
+        margin: 2rem 0;
+        font-size: 1.25rem;
+      }
+
+      .cta:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-lg);
+      }
+
+      /* Fixed Flags Section */
+      .flags {
+        margin: 3rem 0;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
+
+      .flag-container {
+        position: relative;
+        font-size: 3rem;
+        box-shadow: var(--shadow);
+        border-radius: 16px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        padding: 0.5rem;
+        background: var(--panel);
+        border: 2px solid var(--border);
+        min-width: 80px;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .flag-container:hover {
+        transform: scale(1.15);
+        box-shadow: var(--shadow-lg);
+        border-color: var(--accent);
+      }
+
+      /* Flag icon styling - using background-image as fallback */
+      .flag-icon {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      /* Emoji fallbacks - always visible by default */
+      .flag-emoji {
+        font-size: 2.5rem;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+
+      /* Flag-icons library specific styling */
+      .fi {
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        border-radius: 12px !important;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      /* Show flag-icons when they load successfully */
+      .fi.loaded {
+        opacity: 1;
+      }
+
+      /* Hide emoji when flag-icons are loaded */
+      .flag-container.has-flag-icon .flag-emoji {
+        opacity: 0;
+      }
+
+      /* Sections with more spacing */
+      section {
+        padding: 6rem 0;
+      }
+
+      .panel {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 2.5rem;
+        transition: all 0.3s ease;
+      }
+
+      .panel:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-lg);
+      }
+
+      h2 {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        margin: 0 0 2rem;
+        color: var(--text);
+        font-weight: 700;
+      }
+
+      h3 {
+        font-size: 1.25rem;
+        margin: 0 0 1rem;
+        color: var(--text);
+        font-weight: 600;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      /* Enhanced Services with bigger cards */
+      .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+        margin-top: 2.5rem;
+      }
+
+      .service-item {
+        padding: 2rem;
+        border-radius: 20px;
+        background: var(--bg);
+        border: 1px solid var(--border);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+      }
+
+      .service-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: var(--gradient-primary);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+      }
+
+      .service-item:hover::before {
+        transform: scaleX(1);
+      }
+
+      .service-item:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-lg);
+        border-color: var(--accent);
+      }
+
+      .dot {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--accent);
+        margin-left: 16px;
+        vertical-align: middle;
+        flex-shrink: 0;
+      }
+
+      /* About Section */
+      .split {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 2.5rem;
+        align-items: start;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        background: var(--accent-light);
+        color: var(--accent);
+        font-weight: 700;
+        margin-bottom: 1rem;
+        font-size: 0.875rem;
+      }
+
+      .about-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .profile-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: var(--shadow);
+        border: 3px solid var(--accent);
+      }
+
+      .advantages-panel {
+        background: var(--accent-light);
+        border: 2px dashed var(--accent);
+        padding: 2rem;
+        border-radius: var(--radius);
+      }
+
+      .advantages-panel h3 {
+        color: var(--accent);
+        margin-bottom: 1.5rem;
+      }
+
+      .advantages-panel ul {
+        margin: 0;
+        padding-right: 1.5rem;
+        color: var(--muted);
+      }
+
+      .advantages-panel li {
+        margin-bottom: 0.75rem;
+      }
+
+      /* Contact Form Section */
+      .contact-form-section {
+        background: var(--panel);
+        border-radius: var(--radius);
+        padding: 3rem;
+        margin-top: 2rem;
+        border: 1px solid var(--border);
+      }
+
+      .form-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-group label {
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: var(--text);
+      }
+
+      .form-group input,
+      .form-group textarea,
+      .form-group select {
+        padding: 1rem;
+        border: 2px solid var(--border);
+        border-radius: 12px;
+        background: var(--bg);
+        color: var(--text);
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        font-family: inherit;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus,
+      .form-group select:focus {
+        outline: none;
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+
+      .form-submit {
+        background: var(--gradient-primary);
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 1.1rem;
+        width: 100%;
+      }
+
+      .form-submit:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-lg);
+      }
+
+      /* Contact Section */
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .contact-card {
+        padding: 1.5rem;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: var(--bg);
+        transition: all 0.3s ease;
+      }
+
+      .contact-card:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow);
+        border-color: var(--accent);
+      }
+
+      .contact-card strong {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: var(--text);
+      }
+
+      .contact-card a {
+        color: var(--accent);
+        transition: color 0.3s ease;
+      }
+
+      .contact-card a:hover {
+        color: var(--accent-2);
+      }
+
+      /* Footer */
+      footer {
+        padding: 3rem 0;
+        color: var(--muted);
+        text-align: center;
+        border-top: 1px solid var(--border);
+        margin-top: 3rem;
+      }
+
+      /* Jump to Top Button */
+      .jump-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background: var(--gradient-primary);
+        color: white;
+        border: none;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: var(--shadow);
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px);
+      }
+
+      .jump-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .jump-to-top:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .jump-to-top i {
+        font-size: 1.2rem;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .container {
+          padding: 0 1rem;
+        }
+
+        .menu {
+          display: none;
+        }
+
+        .mobile-menu-toggle {
+          display: block;
+        }
+
+        .split {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        .hero {
+          padding: 6rem 0 4rem;
+        }
+
+        .hero h1 {
+          font-size: clamp(1.75rem, 6vw, 2.5rem);
+        }
+
+        .services {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .flag-container {
+          font-size: 2.5rem;
+          min-width: 70px;
+          min-height: 70px;
+        }
+
+        .flag-emoji {
+          font-size: 2rem;
+        }
+
+        .jump-to-top {
+          bottom: 1rem;
+          right: 1rem;
+          width: 48px;
+          height: 48px;
+        }
+
+        .form-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .hero {
+          padding: 5rem 0 3rem;
+        }
+
+        .panel {
+          padding: 2rem;
+        }
+
+        .service-item {
+          padding: 1.5rem;
+        }
+
+        .about-header {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .profile-img {
+          width: 70px;
+          height: 70px;
+        }
+
+        .flag-container {
+          font-size: 2rem;
+          min-width: 60px;
+          min-height: 60px;
+        }
+
+        .flag-emoji {
+          font-size: 1.5rem;
+        }
+
+        .contact-form-section {
+          padding: 2rem;
+        }
+      }
+
+      /* Animation classes */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .slide-in-left {
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: all 0.6s ease;
+      }
+
+      .slide-in-left.visible {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      .slide-in-right {
+        opacity: 0;
+        transform: translateX(50px);
+        transition: all 0.6s ease;
+      }
+
+      .slide-in-right.visible {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      /* Utility classes */
+      .text-center {
+        text-align: center;
+      }
+      .mt-0 {
+        margin-top: 0;
+      }
+      .mb-0 {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="brand">کاوه <strong>عراقی</strong></div>
+
+        <nav class="menu">
+          <a href="#services">خدمات</a>
+          <a href="#about">درباره</a>
+          <a href="#contact">تماس</a>
+        </nav>
+
+        <div class="nav-controls">
+          <button class="theme-toggle" id="themeToggle" aria-label="تغییر تم">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button
+            class="mobile-menu-toggle"
+            id="mobileMenuToggle"
+            aria-label="منوی موبایل"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- About -->
-  <section id="about" class="container">
-    <div class="panel split">
-      <div>
-        <div class="about-header">
-          <img src="profile.jpg" alt="کاوه عراقی" class="profile-img">
-          <div>
-            <span class="badge">درباره کاوه عراقی</span>
-            <h2 class="mt-0">رزومه‌ای معتبر در مسیر مهاجرت</h2>
+    <!-- Hero Section -->
+    <section class="hero container">
+      <h1 class="fade-in">مهاجرت مطمئن با همراهی کاوه عراقی</h1>
+      <p class="fade-in">
+        با بیش از دو دهه تجربه موفق در حوزه مهاجرت، تحصیل، سرمایه‌گذاری و بیزینس
+        در آلمان، کانادا، انگلیس و ژاپن
+      </p>
+
+      <!-- Fixed Flags Section -->
+      <div class="flags fade-in">
+        <div class="flag-container" title="آلمان">
+          <div class="flag-icon">
+            <span class="fi fi-de"></span>
+            <span class="flag-emoji">🇩🇪</span>
           </div>
         </div>
-        <p class="muted">
-          کاوه عراقی، فارغ‌التحصیل رشته مهندسی از دانشگاه‌های آلمان، با بیش از ۲۰ سال تجربه در زمینه مهاجرت و بیزینس بین‌المللی، بنیان‌گذار چندین شرکت ثبت‌شده در آلمان و سوئیس و اتریش است. ایشان عضو رسمی اتاق بازرگانی ایران–آلمان می‌باشند و سال‌هاست در مسیر هموارسازی راه مهاجرت و موفقیت شغلی ایرانیان در اروپا فعالیت می‌کنند.
+        <div class="flag-container" title="کانادا">
+          <div class="flag-icon">
+            <span class="fi fi-ca"></span>
+            <span class="flag-emoji">🇨🇦</span>
+          </div>
+        </div>
+        <div class="flag-container" title="انگلیس">
+          <div class="flag-icon">
+            <span class="fi fi-gb"></span>
+            <span class="flag-emoji">🇬🇧</span>
+          </div>
+        </div>
+        <div class="flag-container" title="ژاپن">
+          <div class="flag-icon">
+            <span class="fi fi-jp"></span>
+            <span class="flag-emoji">🇯🇵</span>
+          </div>
+        </div>
+        <div class="flag-container" title="سوئیس">
+          <div class="flag-icon">
+            <span class="fi fi-ch"></span>
+            <span class="flag-emoji">🇨🇭</span>
+          </div>
+        </div>
+        <div class="flag-container" title="اتریش">
+          <div class="flag-icon">
+            <span class="fi fi-at"></span>
+            <span class="flag-emoji">🇦🇹</span>
+          </div>
+        </div>
+        <div class="flag-container" title="اتحادیه اروپا">
+          <div class="flag-icon">
+            <span class="fi fi-eu"></span>
+            <span class="flag-emoji">🇪🇺</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="cta fade-in" href="#contact">درخواست مشاوره</a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container">
+      <div class="panel">
+        <h2>خدمات ما</h2>
+        <div class="services">
+          <div class="service-item fade-in">
+            <span class="dot"></span>
+            ثبت و تاسیس شرکت در آلمان و سوئیس
+          </div>
+          <div class="service-item fade-in">
+            <span class="dot"></span>
+            دریافت اقامت کاری، تحصیلی و سرمایه‌گذاری
+          </div>
+          <div class="service-item fade-in">
+            <span class="dot"></span>
+            مشاوره جهت اخذ نمایندگی از شرکت‌های اروپایی
+          </div>
+          <div class="service-item fade-in">
+            <span class="dot"></span>
+            ثبت علائم تجاری در آلمان و اتحادیه اروپا
+          </div>
+          <div class="service-item fade-in">
+            <span class="dot"></span>
+            برگزاری و مشارکت در نمایشگاه‌های بین‌المللی
+          </div>
+          <div class="service-item fade-in">
+            <span class="dot"></span>
+            آموزش حرفه‌ای زبان آلمانی
+          </div>
+          <div class="service-item fade-in">
+            <span class="dot"></span>
+            دریافت ویزای تحصیلی و کاری (Job Offer)
+          </div>
+          <div class="service-item fade-in">
+            <span class="dot"></span>
+            اخذ کارت اقامت دائم (Blue Card)
+          </div>
+          <div class="service-item fade-in">
+            <span class="dot"></span>
+            پشتیبانی کامل از ایرانیان مقیم آلمان و اروپا
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+      <div class="panel split">
+        <div class="slide-in-left">
+          <div class="about-header">
+            <img
+              src="https://via.placeholder.com/80x80/2563eb/ffffff?text=ک"
+              alt="کاوه عراقی"
+              class="profile-img"
+            />
+            <div>
+              <span class="badge">درباره کاوه عراقی</span>
+              <h2 class="mt-0">رزومه‌ای معتبر در مسیر مهاجرت</h2>
+            </div>
+          </div>
+          <p class="muted">
+            کاوه عراقی، فارغ‌التحصیل رشته مهندسی از دانشگاه‌های آلمان، با بیش از
+            ۲۰ سال تجربه در زمینه مهاجرت و بیزینس بین‌المللی، بنیان‌گذار چندین
+            شرکت ثبت‌شده در آلمان و سوئیس و اتریش است. ایشان عضو رسمی اتاق
+            بازرگانی ایران–آلمان می‌باشند و سال‌هاست در مسیر هموارسازی راه
+            مهاجرت و موفقیت شغلی ایرانیان در اروپا فعالیت می‌کنند.
+          </p>
+        </div>
+
+        <div class="advantages-panel slide-in-right">
+          <h3>مزیت رقابتی ما</h3>
+          <ul>
+            <li>مسیرهای قانونی، شفاف و قابل پیگیری</li>
+            <li>شبکه ارتباطی قوی در آلمان و سوئیس</li>
+            <li>پشتیبانی واقعی از شروع پرونده تا استقرار</li>
+            <li>تجربه موفق در صدها پرونده مهاجرتی</li>
+            <li>همکاری با بهترین وکلای اروپایی</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+      <div class="panel">
+        <h2>اطلاعات تماس</h2>
+        <p class="muted">📍 دفتر ایران و آلمان</p>
+        <div class="contact-grid">
+          <div class="contact-card fade-in">
+            <strong><i class="fas fa-phone"></i> تلفن</strong>
+            <div>
+              <a href="tel:09388252029">09388252029</a><br />
+              <a href="tel:09197207620">09197207620</a>
+            </div>
+          </div>
+          <div class="contact-card fade-in">
+            <strong><i class="fas fa-envelope"></i> ایمیل</strong>
+            <div>
+              <a href="mailto:kaveharaghi_al@yahoo.com"
+                >kaveharaghi_al@yahoo.com</a
+              ><br />
+              <a href="mailto:kaveharaghi@gmail.com">kaveharaghi@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card fade-in">
+            <strong><i class="fas fa-globe"></i> وب‌سایت</strong>
+            <div>
+              <a href="http://www.kaveharaghi.ir" target="_blank" rel="noopener"
+                >www.kaveharaghi.ir</a
+              >
+            </div>
+          </div>
+          <div class="contact-card fade-in">
+            <strong><i class="fas fa-map-marker-alt"></i> آدرس</strong>
+            <div>
+              تهران، خیابان ولیعصر<br />
+              دفتر آلمان: برلین
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-section">
+          <h3>فرم درخواست مشاوره</h3>
+          <p class="muted">
+            لطفاً اطلاعات خود را وارد کنید تا با شما تماس بگیریم
+          </p>
+
+          <form id="contactForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="fullName">نام و نام خانوادگی *</label>
+                <input type="text" id="fullName" name="fullName" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">شماره تلفن *</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">ایمیل</label>
+                <input type="email" id="email" name="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="service">نوع خدمات مورد نیاز *</label>
+                <select id="service" name="service" required>
+                  <option value="">انتخاب کنید</option>
+                  <option value="company">ثبت شرکت</option>
+                  <option value="visa">ویزا و اقامت</option>
+                  <option value="investment">سرمایه‌گذاری</option>
+                  <option value="education">تحصیل</option>
+                  <option value="business">بیزینس</option>
+                  <option value="other">سایر</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">توضیحات و سوالات</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="لطفاً جزئیات درخواست خود را شرح دهید..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">
+              <i class="fas fa-paper-plane"></i> ارسال درخواست
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>© 2025 کاوه عراقی — تمامی حقوق محفوظ است.</p>
+        <p class="muted" style="margin-top: 0.5rem; font-size: 0.875rem">
+          مشاوره تخصصی مهاجرت و بیزینس بین‌المللی
         </p>
       </div>
-      <div class="panel" style="background:rgba(56,189,248,.06);border-style:dashed;">
-        <h3 style="margin-top:0;color:var(--accent)">مزیت رقابتی ما</h3>
-        <ul class="muted" style="margin:0;padding-right:18px">
-          <li>مسیرهای قانونی، شفاف و قابل پیگیری</li>
-          <li>شبکه ارتباطی قوی در آلمان و سوئیس</li>
-          <li>پشتیبانی واقعی از شروع پرونده تا استقرار</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Contact -->
-  <section id="contact" class="container">
-    <div class="panel">
-      <h2>اطلاعات تماس</h2>
-      <p class="muted">📍 دفتر ایران و آلمان</p>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <strong>تلفن</strong>
-          <div><a href="tel:09388252029">09388252029</a> – <a href="tel:09197207620">09197207620</a></div>
-        </div>
-        <div class="contact-card">
-          <strong>ایمیل</strong>
-          <div>
-            <a href="mailto:kaveharaghi_al@yahoo.com">kaveharaghi_al@yahoo.com</a><br/>
-            <a href="mailto:kaveharaghi@gmail.com">kaveharaghi@gmail.com</a>
-          </div>
-        </div>
-        <div class="contact-card">
-          <strong>وب‌سایت</strong>
-          <div><a href="http://www.kaveharaghi.ir" target="_blank" rel="noopener">www.kaveharaghi.ir</a></div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Jump to Top Button -->
+    <button class="jump-to-top" id="jumpToTop" aria-label="بازگشت به بالا">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
-  <footer>
-    © 2025 کاوه عراقی — تمامی حقوق محفوظ است.
-  </footer>
+    <script>
+      // Theme Toggle
+      const themeToggle = document.getElementById("themeToggle");
+      const body = document.body;
+      const icon = themeToggle.querySelector("i");
 
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click',e=>{
-        const id=a.getAttribute('href');
-        if(id.length>1){
-          e.preventDefault();
-          document.querySelector(id)?.scrollIntoView({behavior:'smooth',block:'start'});
+      // Check for saved theme preference or default to 'light'
+      const currentTheme = localStorage.getItem("theme") || "light";
+      body.setAttribute("data-theme", currentTheme);
+      updateThemeIcon(currentTheme);
+
+      themeToggle.addEventListener("click", () => {
+        const currentTheme = body.getAttribute("data-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+
+        body.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+        updateThemeIcon(newTheme);
+      });
+
+      function updateThemeIcon(theme) {
+        if (theme === "dark") {
+          icon.className = "fas fa-sun";
+        } else {
+          icon.className = "fas fa-moon";
+        }
+      }
+
+      // Mobile Menu Toggle
+      const mobileMenuToggle = document.getElementById("mobileMenuToggle");
+      const menu = document.querySelector(".menu");
+
+      mobileMenuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+
+      // Smooth Scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", (e) => {
+          const href = link.getAttribute("href");
+          if (href.length > 1) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              const headerHeight =
+                document.querySelector("header").offsetHeight;
+              const targetPosition = target.offsetTop - headerHeight;
+
+              window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth",
+              });
+            }
+          }
+        });
+      });
+
+      // Jump to Top Button
+      const jumpToTopBtn = document.getElementById("jumpToTop");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          jumpToTopBtn.classList.add("visible");
+        } else {
+          jumpToTopBtn.classList.remove("visible");
         }
       });
-    });
-  </script>
-</body>
+
+      jumpToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+
+      // Contact Form Handling
+      const contactForm = document.getElementById("contactForm");
+
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        // Get form data
+        const formData = new FormData(contactForm);
+        const data = {
+          fullName: formData.get("fullName"),
+          phone: formData.get("phone"),
+          email: formData.get("email"),
+          service: formData.get("service"),
+          message: formData.get("message"),
+        };
+
+        // Show success message (you can replace this with actual form submission)
+        alert(
+          "درخواست شما با موفقیت ارسال شد! در اسرع وقت با شما تماس خواهیم گرفت."
+        );
+
+        // Reset form
+        contactForm.reset();
+      });
+
+      // Intersection Observer for animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, observerOptions);
+
+      // Observe all animated elements
+      document
+        .querySelectorAll(".fade-in, .slide-in-left, .slide-in-right")
+        .forEach((el) => {
+          observer.observe(el);
+        });
+
+      // Header scroll effect
+      window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
+        if (window.scrollY > 100) {
+          header.style.background =
+            body.getAttribute("data-theme") === "dark"
+              ? "rgba(15, 23, 42, 0.95)"
+              : "rgba(255, 255, 255, 0.95)";
+          header.style.boxShadow = "0 4px 20px rgba(0, 0, 0, 0.1)";
+        } else {
+          header.style.background =
+            body.getAttribute("data-theme") === "dark"
+              ? "rgba(15, 23, 42, 0.9)"
+              : "rgba(255, 255, 255, 0.9)";
+          header.style.boxShadow = "none";
+        }
+      });
+
+      // Fixed Flag Display System
+      function initFlags() {
+        const flagContainers = document.querySelectorAll('.flag-container');
+        
+        flagContainers.forEach(container => {
+          const flagIcon = container.querySelector('.fi');
+          const flagEmoji = container.querySelector('.flag-emoji');
+          
+          if (flagIcon && flagEmoji) {
+            // Set initial state - emoji visible, flag-icon hidden
+            flagEmoji.style.opacity = '1';
+            flagIcon.style.opacity = '0';
+            
+            // Check if flag-icons library loaded by testing background-image
+            const checkFlagIcon = () => {
+              const computedStyle = window.getComputedStyle(flagIcon);
+              const hasBackgroundImage = computedStyle.backgroundImage && 
+                                       computedStyle.backgroundImage !== 'none' && 
+                                       computedStyle.backgroundImage !== '';
+              
+              if (hasBackgroundImage) {
+                // Flag-icons library loaded successfully
+                flagIcon.classList.add('loaded');
+                flagIcon.style.opacity = '1';
+                flagEmoji.style.opacity = '0';
+                container.classList.add('has-flag-icon');
+              } else {
+                // Keep emoji visible
+                flagEmoji.style.opacity = '1';
+                flagIcon.style.opacity = '0';
+                container.classList.remove('has-flag-icon');
+              }
+            };
+            
+            // Check multiple times to ensure we catch when the CSS loads
+            setTimeout(checkFlagIcon, 100);
+            setTimeout(checkFlagIcon, 500);
+            setTimeout(checkFlagIcon, 1000);
+            setTimeout(checkFlagIcon, 2000);
+            
+            // Also check when images load
+            if (flagIcon.complete) {
+              checkFlagIcon();
+            } else {
+              flagIcon.addEventListener('load', checkFlagIcon);
+              flagIcon.addEventListener('error', () => {
+                // Ensure emoji stays visible on error
+                flagEmoji.style.opacity = '1';
+                flagIcon.style.opacity = '0';
+              });
+            }
+          }
+        });
+      }
+
+      // Initialize flags when DOM is ready
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initFlags);
+      } else {
+        initFlags();
+      }
+
+      // Also initialize when window loads
+      window.addEventListener('load', () => {
+        setTimeout(initFlags, 100);
+      });
+
+      // Keyboard shortcuts
+      document.addEventListener("keydown", (e) => {
+        // Ctrl/Cmd + D to toggle theme
+        if ((e.ctrlKey || e.metaKey) && e.key === "d") {
+          e.preventDefault();
+          themeToggle.click();
+        }
+
+        // Escape to close mobile menu
+        if (e.key === "Escape" && menu.classList.contains("active")) {
+          menu.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
 </html>
