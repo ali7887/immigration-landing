@@ -698,6 +698,20 @@
         .menu {
           display: none;
         }
+        .menu.active {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          right: 0;
+          width: 100vw;
+          background: var(--bg);
+          box-shadow: var(--shadow);
+          z-index: 100;
+          padding: 2rem 0 1rem 0;
+          border-bottom: 1px solid var(--border);
+          align-items: center;
+        }
 
         .mobile-menu-toggle {
           display: block;
@@ -1245,53 +1259,54 @@
 
       // Fixed Flag Display System
       function initFlags() {
-        const flagContainers = document.querySelectorAll('.flag-container');
-        
-        flagContainers.forEach(container => {
-          const flagIcon = container.querySelector('.fi');
-          const flagEmoji = container.querySelector('.flag-emoji');
-          
+        const flagContainers = document.querySelectorAll(".flag-container");
+
+        flagContainers.forEach((container) => {
+          const flagIcon = container.querySelector(".fi");
+          const flagEmoji = container.querySelector(".flag-emoji");
+
           if (flagIcon && flagEmoji) {
             // Set initial state - emoji visible, flag-icon hidden
-            flagEmoji.style.opacity = '1';
-            flagIcon.style.opacity = '0';
-            
+            flagEmoji.style.opacity = "1";
+            flagIcon.style.opacity = "0";
+
             // Check if flag-icons library loaded by testing background-image
             const checkFlagIcon = () => {
               const computedStyle = window.getComputedStyle(flagIcon);
-              const hasBackgroundImage = computedStyle.backgroundImage && 
-                                       computedStyle.backgroundImage !== 'none' && 
-                                       computedStyle.backgroundImage !== '';
-              
+              const hasBackgroundImage =
+                computedStyle.backgroundImage &&
+                computedStyle.backgroundImage !== "none" &&
+                computedStyle.backgroundImage !== "";
+
               if (hasBackgroundImage) {
                 // Flag-icons library loaded successfully
-                flagIcon.classList.add('loaded');
-                flagIcon.style.opacity = '1';
-                flagEmoji.style.opacity = '0';
-                container.classList.add('has-flag-icon');
+                flagIcon.classList.add("loaded");
+                flagIcon.style.opacity = "1";
+                flagEmoji.style.opacity = "0";
+                container.classList.add("has-flag-icon");
               } else {
                 // Keep emoji visible
-                flagEmoji.style.opacity = '1';
-                flagIcon.style.opacity = '0';
-                container.classList.remove('has-flag-icon');
+                flagEmoji.style.opacity = "1";
+                flagIcon.style.opacity = "0";
+                container.classList.remove("has-flag-icon");
               }
             };
-            
+
             // Check multiple times to ensure we catch when the CSS loads
             setTimeout(checkFlagIcon, 100);
             setTimeout(checkFlagIcon, 500);
             setTimeout(checkFlagIcon, 1000);
             setTimeout(checkFlagIcon, 2000);
-            
+
             // Also check when images load
             if (flagIcon.complete) {
               checkFlagIcon();
             } else {
-              flagIcon.addEventListener('load', checkFlagIcon);
-              flagIcon.addEventListener('error', () => {
+              flagIcon.addEventListener("load", checkFlagIcon);
+              flagIcon.addEventListener("error", () => {
                 // Ensure emoji stays visible on error
-                flagEmoji.style.opacity = '1';
-                flagIcon.style.opacity = '0';
+                flagEmoji.style.opacity = "1";
+                flagIcon.style.opacity = "0";
               });
             }
           }
@@ -1299,14 +1314,14 @@
       }
 
       // Initialize flags when DOM is ready
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initFlags);
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initFlags);
       } else {
         initFlags();
       }
 
       // Also initialize when window loads
-      window.addEventListener('load', () => {
+      window.addEventListener("load", () => {
         setTimeout(initFlags, 100);
       });
 
